@@ -44,7 +44,7 @@ const UI_TEXT = {
     officialPortalsTitle: "Official Departmental Directory & Helplines",
     demoBadge: "Offline / Handbook Mode",
     demoMessage: "Showing verified government handbook guide. Add GEMMA_API_KEY to .env.local for custom AI inquiries.",
-    
+
     // GPS & Map
     locatorHeading: "📍 Nearest Government Offices & Live Map",
     locatorSubhead: "Use your GPS or enter your city to see nearby centres, working hours, and get live directions.",
@@ -308,10 +308,10 @@ export default function Home() {
   const handleUseGPS = () => {
     if (!navigator.geolocation) {
       setGpsError(
-        lang === 'hi' 
-          ? 'आपके ब्राउज़र में जीपीएस (GPS) उपलब्ध नहीं है।' 
-          : lang === 'bn' 
-            ? 'আপনার ব্রাউজারে জিপিএস উপলব্ধ নেই।' 
+        lang === 'hi'
+          ? 'आपके ब्राउज़र में जीपीएस (GPS) उपलब्ध नहीं है।'
+          : lang === 'bn'
+            ? 'আপনার ব্রাউজারে জিপিএস উপলব্ধ নেই।'
             : 'GPS is not supported by your browser.'
       );
       return;
@@ -417,10 +417,10 @@ export default function Home() {
     const textToSend = (queryText || '').trim();
     if (!textToSend) {
       setError(
-        languageToUse === 'hi' 
-          ? 'कृपया अपनी समस्या या सरकारी सेवा का नाम लिखें।' 
-          : languageToUse === 'bn' 
-            ? 'অনুগ্রহ করে আপনার সমস্যা বা কাজের বিবরণ লিখুন।' 
+        languageToUse === 'hi'
+          ? 'कृपया अपनी समस्या या सरकारी सेवा का नाम लिखें।'
+          : languageToUse === 'bn'
+            ? 'অনুগ্রহ করে আপনার সমস্যা বা কাজের বিবরণ লিখুন।'
             : 'Please enter a paperwork problem or government service.'
       );
       return;
